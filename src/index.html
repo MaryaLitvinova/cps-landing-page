@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maket4</title>
 </head>
-<body>
+<body> 
         <div class="container">
         <div class="icons">
           <button tabindex="1" id="modal_menu__open" aria-label="Open menu"><span class="el-menu hide-l"><img src="img/menu.svg" class="icon-menu"></span></button>
-<div id="modal_menu">
+          <div id="modal_menu">
   <div class="hamburger-menu">
     <div class="menu__box">
       <div class="menu__header">
@@ -43,7 +43,7 @@
                 </form>
             </div>
           </div>
-          <button aria-label="Go to chat" type="button"><span class="menu__el-sms"><img src="img/sms.svg" class="menu__icon-sms"></span></button>
+          <button aria-label="Go to chat" type="button"><img src="img/sms.png" class="menu__icon-sms"></button>
           <button aria-label="Go to my profile" type="button"><span class="menu__el-profile"><img src="img/profile.svg" class="menu__icon-profile"></span></button>
       </div>
       <div class="contacts">
@@ -51,7 +51,7 @@
         <a href="tel:8800890890">8 800 890 890</a>
       </div>  
         <ul class="lng">
-          <li><button aria-label="Change language to Russian" type="button">RU</button></li>
+          <li><button aria-label="Change language to Russian" autofocus type="button">RU</button></li>
           <li><button aria-label="Change language to English" type="button">EN</button></li>
           <li><button aria-label="Change language to Chinese" type="button">CN</button></li>
         </ul>
@@ -61,33 +61,33 @@
 </div>
           <img src="img/line.svg" class="icon-line hide-s hide-l" />
           <img src="img/logo.svg" class="icon-logo hide-l" />
-          <button tabindex="2" aria-label="Open contacts" type="button"><span class="el-phone hide-l"><img src="img/phone.svg" class="hide-s icon-phone"></span></button>
-          <button tabindex="3" aria-label="Open chat" type="button"><span class="el-sms hide-l"><img src="img/sms.svg" class="hide-s icon-sms"></span></button>
-          <button tabindex="4" aria-label="Open profile" type="button"><span class="el-profile hide-l"><img src="img/profile.svg" class="hide-s icon-profile"></span></button>
+          <button tabindex="1" aria-label="Open contacts" type="button"><span class="el-phone hide-l"><img src="img/phone.svg" class="hide-s icon-phone"></span></button>
+          <button tabindex="2" aria-label="Open chat" type="button"><img src="img/sms.png" class="icon-sms hide-s hide-l"></button>
+          <button tabindex="3" aria-label="Open profile" type="button"><span class="el-profile hide-l"><img src="img/profile.svg" class="hide-s icon-profile"></span></button>
           <img src="img/line.svg" class="icon-line hide-l" />
-          <button tabindex="5" aria-label="Write an application" type="button"><p class="icon-text_write hide-s hide-m">Оставить заявку</p><span class="el-settings"><img src="img/settings.svg" class="icon-settings"></span></button>
-          <button tabindex="6" aria-label="Check my repair status" type="button"><p class="icon-text_check hide-s hide-m">Статус ремонта</p><span class="el-search"><img src="img/search.svg" class="icon-search"></span></button>
+          <button tabindex="4" aria-label="Write an application" type="button"><p class="icon-text_write hide-s hide-m">Статус ремонта</p><span class="el-settings"><img src="img/settings.svg" class="icon-settings"></span></button>
+          <button tabindex="5" aria-label="Check my repair status" type="button"><p class="icon-text_check hide-s hide-m">Оставить заявку</p><span class="el-search"><img src="img/search.svg" class="icon-search"></span></button>
         </div>
         <div class="menu-header">
           <h1 class="title">Услуги и сервисы</h1>
-          <section class="carousel">
-            <ul class="menu">
-             <li class="menu-list hide-s hide-m"><button tabindex="7" aria-label="See all brands" type="button">Ремонтируемые бренды</button></li>
-             <li class="menu-list"><button tabindex="8" type="button" aria-label="See all devices" value="focus">Ремонтируемые устройства</button></li>
-             <li class="menu-list hide-l"><button tabindex="9" aria-label="View additional services" type="button">Дополнительные услуги</button></li>
-             <li class="menu-list"><button tabindex="10" aria-label="See prices fr services" type="button">Цены на услуги</button></li>
-             <li class="menu-list hide-m"><button tabindex="11" aria-label="View addresses of service centers" type="button">Адреса сервисных центров</button></li>
-             <li class="menu-list hide-s"><button tabindex="12" aria-label="See srecial prices" type="button">Специальные цены</button></li>
-             <li class="menu-list hide-s hide-m"><button tabindex="13" aria-label="See reviews" type="button">Отзывы</button></li>
-            </ul>
-          </section>
+          <div class="carousel">
+            <div class="menu" >
+             <div class="menu-list hide-s hide-m"><button tabindex="6" aria-label="See all brands" type="button">Ремонтируемые бренды</button></div>
+             <div class="menu-list"><button tabindex="7" type="button" aria-label="See all devices" value="focus">Ремонтируемые устройства</button></div>
+             <div class="menu-list hide-l"><button tabindex="8" aria-label="View additional services" type="button">Дополнительные услуги</button></div>
+             <div class="menu-list"><button tabindex="9" aria-label="See prices fr services" type="button">Цены на услуги</button></div>
+             <div class="menu-list"><button tabindex="10" aria-label="View addresses of service centers" type="button">Адреса сервисных центров</button></div>
+             <div class="menu-list"><button tabindex="11" aria-label="See srecial prices" type="button">Специальные цены</button></div>
+             <div class="menu-list"><button tabindex="12" aria-label="See reviews" type="button">Отзывы</button></div>
+            </div>
+          </div>
         </div>
       </div>
       </header>
       <main class="about">
       <div class="spoiler">
         <label for="button" class="label__spoiler">Читать далее</label>
-        <input tabindex="14" type="checkbox" id="button">
+        <input tabindex="13" type="checkbox" id="button">
         <div class="xpandable-block">
           <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
           <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p></div>
@@ -99,68 +99,68 @@
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/lenovo.svg" />
-                    <button tabindex="1" aria-label="Open section lenovo" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="14" aria-label="Open section lenovo" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/samsung.svg" />
-                    <button tabindex="2" aria-label="Open section samsung" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="15" aria-label="Open section samsung" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/apple.svg" />
-                    <button tabindex="3" aria-label="Open section apple" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="16" aria-label="Open section apple" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/bosh.svg" />
-                    <button tabindex="4" aria-label="Open section bosh" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="17" aria-label="Open section bosh" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/hp.svg" />
-                    <button tabindex="5" aria-label="Open section hp" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="18" aria-label="Open section hp" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide hide-m brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/acer.svg" />
-                    <button tabindex="6" aria-label="Open section acer" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="19" aria-label="Open section acer" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide hide-m brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/viewsonic.svg" />
-                    <button tabindex="7" aria-label="Open section viewsonic" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="20" aria-label="Open section viewsonic" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/sony.svg" />
-                    <button tabindex="8" aria-label="Open section sony" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="21" aria-label="Open section sony" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div id="contentSpoilerBrand"><div class="open_slider_brand">
                   <div class="swiper-slide brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/lenovo.svg" />
-                    <button tabindex="9" aria-label="Open section lenovo" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="22" aria-label="Open section lenovo" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide hide-s brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/samsung.svg" />
-                    <button tabindex="10" aria-label="Open section samsung" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="23" aria-label="Open section samsung" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                   <div class="swiper-slide hide-s brand-slide">
                     <div class="brand-wrapper_slide">
                     <img src="img/apple.svg" />
-                    <button tabindex="11" aria-label="Open section apple" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+                    <button tabindex="24" aria-label="Open section apple" type="button" class="brand_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
                   </div>
                   </div>
                 </div>
@@ -169,118 +169,104 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <script>
-            function SpoilerBrand() {
-              var elementBrand = document.getElementById("contentSpoilerBrand");
-                      var textBrand = document.getElementById("linkSpoilerBrand");
-                      if(elementBrand.style.display == "block") {
-                            elementBrand.style.display = "none";
-                        textBrand.innerHTML = "Показать все";
-                        }
-                      else {
-                        elementBrand.style.display = "block";
-                        textBrand.innerHTML = "Скрыть";
-                      }
-                    }
-            </script>
   <div class="wrapper-title"><h1 class="wrapper-title_title">Ремонт различных видов техники</h1></div>
   <div class="swiper">
     <div class="swiper-wrapper service_wrapper">
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт ноутбуков</p>
-            <button tabindex="12" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="25" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт планшетов</p>
-            <button tabindex="13" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="26" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт ПК</p>
-            <button tabindex="14" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="27" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
         </div>
           </div>
           <div class="swiper-slide hide-s hide-m service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт мониторов</p>
-            <button tabindex="15" aria-label="Open the monitor repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="28" aria-label="Open the monitor repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide hide-m hide-l">
             <div class="service_swiper-slide">
             <p>Ремонт ноутбуков</p>
-            <button tabindex="16" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="29" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide hide-m hide-l">
             <div class="service_swiper-slide">
             <p>Ремонт планшетов</p>
-            <button tabindex="17" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="30" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide hide-m service-slide hide-l">
             <div class="service_swiper-slide">
             <p>Ремонт ПК</p>
-            <button tabindex="18" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="31" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide hide-m hide-l">
             <div class="service_swiper-slide">
             <p>Ремонт мониторов</p>
-            <button tabindex="19" aria-label="Open the monitor repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="32" aria-label="Open the monitor repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide hide-m hide-l">
             <div class="service_swiper-slide">
             <p>Ремонт ноутбуков</p>
-            <button tabindex="20" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="33" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div id="contentSpoilerService"><div class="open_slider_service hide-s">
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт ноутбуков</p>
-            <button tabindex="16" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="34" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide hide-m service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт планшетов</p>
-            <button tabindex="17" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="35" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide hide-m service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт ПК</p>
-            <button tabindex="18" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="36" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт мониторов</p>
-            <button tabindex="19" aria-label="Open the monitor repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="37" aria-label="Open the monitor repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт ноутбуков</p>
-            <button tabindex="20" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="38" aria-label="Open laptop repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт планшетов</p>
-            <button tabindex="21" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="39" aria-label="Open the tablet repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
           <div class="swiper-slide service-slide">
             <div class="service_swiper-slide">
             <p>Ремонт ПК</p>
-            <button tabindex="22" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
+            <button tabindex="40" aria-label="Open pc repair section" type="button" class="service_slider-button"><span><img src="img/arrow.svg" class="arrow"></span></button>
           </div>
           </div>
         </div>
@@ -289,20 +275,6 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
-  <script>
-    function SpoilerService() {
-      var elementService = document.getElementById("contentSpoilerService");
-              var textService = document.getElementById("linkSpoilerService");
-              if(elementService.style.display == "block") {
-                    elementService.style.display = "none";
-                textService.innerHTML = "Показать все";
-                }
-              else {
-                elementService.style.display = "block";
-                textService.innerHTML = "Скрыть";
-              }
-            }
-    </script>
   <div class="wrapper-title"><h1 class="wrapper-title_title">Цены на услуги</h1></div>
   <div class="swiper price_swiper">
     <div class="swiper-wrapper price_swiper-wrapper">
@@ -322,7 +294,7 @@
             <p class="date-list">Срок</p>
             <span class="price_span">
               <p class="date">30-120 мин</p>
-              <button tabindex="23" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+              <button tabindex="41" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
             </span>
         </div>
       </div>
@@ -335,7 +307,7 @@
             <p class="date-list">Срок</p>
             <span class="price_span">
               <p class="date">30-120 мин</p>
-              <button tabindex="23" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+              <button tabindex="42" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
             </span>
           </div>
           </div>
@@ -348,7 +320,7 @@
             <p class="date-list hide-m hide-l">Срок</p>
             <span class="price_span">
               <p class="date">30 мин</p>
-              <button tabindex="23" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+              <button tabindex="43" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
             </span>
           </div>
           </div>
@@ -361,7 +333,7 @@
             <p class="date-list hide-m hide-l">Срок</p>
             <span class="price_span">
               <p class="date">30-120 мин</p>
-              <button tabindex="23" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+              <button tabindex="44" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
             </span>
           </div>
         </div>
@@ -374,7 +346,7 @@
             <p class="date-list hide-m hide-l">Срок</p>
             <span class="price_span">
               <p class="date">30-120 мин</p>
-              <button tabindex="23" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+              <button tabindex="45" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
             </span>
           </div>
           </div>
@@ -387,7 +359,7 @@
             <p class="date-list hide-m hide-l">Срок</p>
             <span class="price_span">
               <p class="date">30-120 мин</p>
-              <button tabindex="23" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+              <button tabindex="46" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
             </span>
           </div>
           </div>
@@ -395,7 +367,7 @@
             <p class="service service_software">Замена программного обеспечения</p>
             <p class="price price_software">1 000 ₽</p>
             <p class="date">30-120 мин</p>
-            <button tabindex="28" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
+            <button tabindex="47" aria-label="Checkout" type="button" class="price-slider_button">Заказать<span><img src="img/arrowwhite.svg"></span></button>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -404,17 +376,46 @@
             <p class="text_warning">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
           </div>
           <div class="offer">
-            <button tabindex="24" aria-label="Get a commercial offer" type="button" class="offer-button">Получить коммерческое предложение</button>        
+            <button tabindex="48" aria-label="Get a commercial offer" type="button" class="offer-button">Получить коммерческое предложение</button>        
           </div>
           </main>
         <footer>
           <div class="page-footer">
             <p class="copyright">© 2019 CPS<br> 
               Разработано командой Apesong</p>
-            <button tabindex="25" aria-label="Privacy Policy" type="button" class="policy-button">Политика конфиденциальности</button>
+            <button tabindex="49" aria-label="Privacy Policy" type="button" class="policy-button">Политика конфиденциальности</button>
             <p class="disclaimer">Информация, размещенная на данной странице, не является публичной офертой</p>
           </div>
         </footer>
-<script src="./src/js/index.js"></script>        
+<script src="./src/js/index.js"></script>   
+<script>
+  function SpoilerBrand() {
+    const elementBrand = document.getElementById("contentSpoilerBrand");
+            const textBrand = document.getElementById("linkSpoilerBrand");
+            if(elementBrand.style.display == "block") {
+                  elementBrand.style.display = "none";
+              textBrand.innerHTML = "Показать все";
+              }
+            else {
+              elementBrand.style.display = "block";
+              textBrand.innerHTML = "Скрыть";
+            }
+          }
+  </script>     
+    <script>
+      function SpoilerService() {
+        const elementService = document.getElementById("contentSpoilerService");
+                const textService = document.getElementById("linkSpoilerService");
+                if(elementService.style.display == "block") {
+                      elementService.style.display = "none";
+                  textService.innerHTML = "Показать все";
+                  }
+                else {
+                  elementService.style.display = "block";
+                  textService.innerHTML = "Скрыть";
+                }
+              }
+      </script>
 </body>
 </html>
+
