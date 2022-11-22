@@ -3,14 +3,16 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/modules/navigation/navigation.scss';
 import 'swiper/modules/pagination/pagination.scss';
 
-var modalMenu = document.getElementById("modal_menu");
-var openMenu = document.getElementById("modal_menu__open");
-var closeMenu = document.getElementsByClassName("modal_menu__close")[0];
+const modalMenu = document.getElementById("modal_menu");
+const openMenu = document.getElementById("modal_menu__open");
+const closeMenu = document.getElementsByClassName("modal_menu__close")[0];
 openMenu.onclick = function() {
   modalMenu.style.display = "block";
+  document.body.style.overflow = 'hidden';
 }
 closeMenu.onclick = function() {
   modalMenu.style.display = "none";
+  document.body.style.overflow = 'visible';
 }
 window.onclick = function(event) {
   if (event.target == modalMenu) {
@@ -18,14 +20,42 @@ window.onclick = function(event) {
   }
 }
 
-var modalCall = document.getElementById("modal_call");
-var openCall = document.getElementById("modal_call__open");
-var closeCall = document.getElementsByClassName("modal_call__close")[0];
+let curDown = false,
+  curYPos = 0,
+  curXPos = 0;
+function ready() {
+  const block = document.querySelector(".carousel");
+  block.addEventListener("mousemove", (e) => {
+    if (curDown) {
+      block.scrollTo(
+        block.scrollLeft + (curXPos - e.pageX),
+        block.scrollTop + (curYPos - e.pageY)
+      );
+    }
+  });
+  document.querySelectorAll(".menu-list").forEach((node) => {
+    node.addEventListener("mousedown", (e) => {
+      curDown = true;
+      curYPos = e.pageY;
+      curXPos = e.pageX;
+    });
+    node.addEventListener("mouseup", (e) => {
+      curDown = false;
+    });
+  });
+}
+ready();
+
+const modalCall = document.getElementById("modal_call");
+const openCall = document.getElementById("modal_call__open");
+const closeCall = document.getElementsByClassName("modal_call__close")[0];
 openCall.onclick = function() {
   modalCall.style.display = "block";
+  document.body.style.overflow = 'hidden';
 }
 closeCall.onclick = function() {
   modalCall.style.display = "none";
+  document.body.style.overflow = 'visible';
 }
 window.onclick = function(event) {
   if (event.target == modalCall) {
@@ -33,7 +63,7 @@ window.onclick = function(event) {
   }
 }
 
-  var init = false;
+var init = false;
   function swiperCard() {
     if (window.innerWidth <= 768) {
       if (!init) {
@@ -58,6 +88,7 @@ window.onclick = function(event) {
   }
   swiperCard();
   window.addEventListener("resize", swiperCard);
+
 
 
 
